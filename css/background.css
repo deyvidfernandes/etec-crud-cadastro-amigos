@@ -1,0 +1,7 @@
+body {
+    background: rgb(18,39,129);
+    background: linear-gradient(353deg, rgba(18,39,129,1) 0%, rgba(48,69,159,1) 100%);   
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

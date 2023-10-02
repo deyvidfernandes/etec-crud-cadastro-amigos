@@ -1,0 +1,208 @@
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    gap: inherit;
+
+}
+
+#delete-modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    & .message {
+        background-color: hsl(4.105, 90%, 58%)
+    }
+
+    & .message i {
+        font-size: 12rem;
+    }
+
+    & .button-container {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.response-modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 50%) 0px 0px 5px;
+    border: rgba(0, 0, 0, 20%) 2px solid;
+    text-align: center;
+
+    font-size: 2.7rem;
+    & i {
+        font-size: 8rem;
+    }
+}
+
+.message[status*="success"] {
+    background-color: hsl(135, 90%, 38%);
+}
+
+.message[status*="error"] {
+    background-color: hsl(4.105, 90%, 58%)
+}
+
+#delete-friend-message {
+    width: 30rem;
+    height: 30rem;
+}
+
+modal {
+    --this-width: 40rem;
+    --this-height: 50rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    z-index: 3;
+
+    position: fixed;
+    left: calc(50vw - var(--this-width) / 2);
+    top: calc(50vh - var(--this-height) / 2);
+    width: var(--this-width);
+    height: var(--this-height);
+
+    padding: 3rem;
+    border-radius: 2rem;
+
+    background-color: #1b42f0;
+    box-shadow: rgba(0, 0, 0, 50%) 0px 0px 5px;
+    border: rgba(0, 0, 0, 20%) 2px solid;
+
+    & h2 {
+        font-size: 3.2rem;
+    }
+
+    & hr {
+        height: 0.2rem;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    & form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        & .input-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        & .input-container input {
+            width: 100%;
+            min-height: 5rem;
+
+            background-color: #fff;
+            color: black;
+            font-size: 2.2rem;
+            padding-left: 2rem;
+
+            border-radius: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+            &::placeholder {
+                color: rgb(119, 119, 119);
+            }
+        }
+
+        & .input-container label {
+            font-size: 2.2rem;
+        }
+        
+
+
+    }
+
+    & form .button-container {
+        margin-left: auto;
+        display: flex;
+        gap: 1rem;
+    }
+
+
+    & form .button-container button, & .button-container button {
+        padding: 1rem;
+
+        background-color: hsl(229, 87%, 40%);
+        font-size: 2.2rem;
+
+
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.modal-fadeIn {
+    animation: fadeIn 0.25s ease-in-out running;
+}
+
+.modal-fadeOut {
+    animation: fadeOut 0.25s ease-in-out running;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to { 
+        opacity: 0;
+    }
+}
+

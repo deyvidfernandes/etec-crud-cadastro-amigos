@@ -1,0 +1,105 @@
+@import "background.css";
+@import "modal.css";
+@import "table.css";
+
+:root {
+    font-size: 62.5%;
+    --main-color: #1b42f0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+body {
+    padding-bottom: 3.7rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 2rem;
+    background-color: var(--main-color);
+    box-shadow: #000 0px 0px 5px;
+}
+
+h1 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:hover {
+    color: hsl(187, 100%, 71%)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+main > p {
+    font-size: 1.8rem;
+    background-color: hsl(229.014, 88%, 60%);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: hsl(229.014, 88%, 60%) 0 0 0.5rem;
+}
+
+.action-container {
+    margin-top: 2rem;
+    width: 62.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+action-button {
+    width: 14rem;
+    height: 14rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 50%) 0px 0px 5px;
+    border: rgba(0, 0, 0, 20%) 2px solid;
+
+    cursor: pointer;
+
+    & i {
+        font-size: 7rem;
+    }
+
+    & span {
+        font-size: 2rem;
+    }
+
+    &.action-blue {
+        background-color: rgb(54, 98, 244);
+    }
+    &.action-red {
+        background-color: rgb(244,67,54);
+    }
+    &.action-purple {
+        background-color: rgb(95, 54, 244);
+    }
+    &.action-darkBlue {
+        background-color: rgb(54, 57, 244);
+    }
+}
