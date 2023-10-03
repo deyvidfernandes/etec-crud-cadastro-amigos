@@ -1,4 +1,4 @@
-import * as modal from './modal.js';
+import * as modal from '../modal.js';
 
 const addButton = document.getElementById("add-friend-button")
 

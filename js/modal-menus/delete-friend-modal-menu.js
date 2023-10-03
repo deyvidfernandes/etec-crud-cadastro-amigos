@@ -1,4 +1,4 @@
-import * as modal from './modal.js';
+import * as modal from '../modal.js';
 
 const deleteButton = document.getElementById("remove-friend-button")
 

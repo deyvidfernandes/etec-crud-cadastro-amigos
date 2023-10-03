@@ -30,8 +30,8 @@
                 </div>
     </main>
     <script src="js/context-menu.js"></script>
-    <script type="module" src="js/add-friend-modal-menu.js"></script>
-    <script type="module" src="js/edit-friend-modal-menu.js"></script>
-    <script type="module" src="js/delete-friend-modal-menu.js"></script>
+    <script type="module" src="js/modal-menus/add-friend-modal-menu.js"></script>
+    <script type="module" src="js/modal-menus/edit-friend-modal-menu.js"></script>
+    <script type="module" src="js/modal-menus/delete-friend-modal-menu.js"></script>
 </body>
 </html>
